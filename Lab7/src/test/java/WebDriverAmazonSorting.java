@@ -6,6 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -25,12 +26,12 @@ public class WebDriverAmazonSorting {
         searchBtn.click();
 
         WebElement sortForm = wait
-                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"search\"]/span/div/span/h1/div/div[2]/div/div/form")));
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"a-autoid-2\"]/span")));
         sortForm.click();
 
-        WebElement sortByFromLowToHighPrice = wait
+        WebElement sortByFromLowToHighPriceBtn = wait
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s-result-sort-select_1\"]")));
-        sortByFromLowToHighPrice.click();
+        sortByFromLowToHighPriceBtn.click();
 
         driver.quit();
     }
@@ -57,9 +58,10 @@ public class WebDriverAmazonSorting {
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s-result-sort-select_1\"]")));
         sortByFromLowToHighPrice.click();
 
-        List <WebElement> sortElements = driver.findElements(By.xpath("//span[@class='a-price-whole'"));
-        int size= sortElements.size();
+        List <WebElement> listElements = driver.findElements(By.xpath("//span[@class='a-price-whole'"));
+        int size= listElements.size();
 
+        Assert.assertTrue(sortElements.equals(listElements));
         driver.quit();
     }
 }
