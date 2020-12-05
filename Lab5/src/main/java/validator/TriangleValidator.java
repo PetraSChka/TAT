@@ -7,6 +7,7 @@ public class TriangleValidator {
         if (sideA<=0 || sideB<=0 || sideC<=0) {
             throw new TriangleException("Сторона не может быть меньше либо равно нулю");
         }
+
         if (sideA+sideB<=sideC || sideA+sideC<=sideB || sideB+sideC<=sideA) {
             throw new TriangleException("Такого треугольника не существует");
         }
