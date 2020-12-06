@@ -19,7 +19,7 @@ public class ProfilePage {
     @FindBy(className = "ya-card__whole-card-link")
     private WebElement userMenu;
 
-    @FindBy(xpath = "//*[@id=\"cnep_1a_name_form\"]/div/div/div[1]/div[2]")
+    @FindBy(xpath = "//*[@id=\"nav-link-accountList\"]/div/span")
     private WebElement name;
 
     @FindBy(xpath = "//*[@id=\"cnep_1a_email_form\"]/div/div/div[1]/div[2]")
