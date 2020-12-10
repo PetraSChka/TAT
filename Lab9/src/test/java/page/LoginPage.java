@@ -1,5 +1,6 @@
 package page;
 
+import model.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,10 +29,18 @@ public class LoginPage extends AbstractPage {
     }
 
     @Override
-    public LoginPage openPage()
-    {
+    public LoginPage openPage() {
         driver.navigate().to(PAGE_URL);
         return this;
+    }
+
+    public MainPage login(User user)
+    {
+        loginField.sendKeys(user.getEmail());
+        loginBtn.click();
+        passwordField.sendKeys(user.getPassword());
+        loginBtn.click();
+        return new MainPage(driver);
     }
 }
 

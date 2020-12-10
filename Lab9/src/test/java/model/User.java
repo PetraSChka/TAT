@@ -4,21 +4,20 @@ import java.util.Objects;
 
 public class User {
 
-    private String username;
+    private String email;
     private String password;
 
-
     public User(String username, String password) {
-        this.username = username;
+        this.email = username;
         this.password = password;
     }
 
-    public String getUsername() {
-        return username;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
@@ -32,7 +31,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "username='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
@@ -42,12 +41,12 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return Objects.equals(getUsername(), user.getUsername()) &&
+        return Objects.equals(getEmail(), user.getEmail()) &&
                 Objects.equals(getPassword(), user.getPassword());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getUsername(), getPassword());
+        return Objects.hash(getEmail(), getPassword());
     }
 }
