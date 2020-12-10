@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 public class DriverSingleton {
 
@@ -14,12 +15,10 @@ public class DriverSingleton {
     public static WebDriver getDriver(){
         if (null == driver){
             switch (System.getProperty("browser")){
-                case "firefox": {
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                case "opera": {
+                    driver = new OperaDriver();
                 }
-                default: {
-                    WebDriverManager.chromedriver().setup();
+                case "chrome": {
                     driver = new ChromeDriver();
                 }
             }

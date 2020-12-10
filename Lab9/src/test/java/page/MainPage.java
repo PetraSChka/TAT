@@ -8,14 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MainPage extends AbstractPage
-{
+public class MainPage extends AbstractPage {
+
     private final String BASE_URL = "https://amazon.com/";
+    private final By linkLoggedInUserLocator = By.xpath("//*[@id=\"nav-link-accountList\"]/div/span");
 
-    private final By linkLoggedInUserLocator = By.xpath("//meta[@name='user-login']");
-
-    public MainPage(WebDriver driver)
-    {
+    public MainPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(this.driver, this);
     }
@@ -31,6 +29,6 @@ public class MainPage extends AbstractPage
     {
         WebElement linkLoggedInUser = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(linkLoggedInUserLocator));
-        return linkLoggedInUser.getAttribute("content");
+        return linkLoggedInUser.getText();
     }
 }
