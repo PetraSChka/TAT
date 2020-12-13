@@ -37,8 +37,7 @@ public class LoginPage extends AbstractPage {
         return this;
     }
 
-    public MainPage login(User user)
-    {
+    public MainPage login(User user) {
         loginField.sendKeys(user.getEmail());
         loginBtn.click();
         passwordField.sendKeys(user.getPassword());

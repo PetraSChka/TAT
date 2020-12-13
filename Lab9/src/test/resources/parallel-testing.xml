@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All tests" verbose="1" >
+    <test name="Test in Chrome">
+        <classes>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+        </classes>
+    </test>
+
+    <test name="Test in Chrome">
+        <classes>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+            <class name="test.UserAccessTests"></class>
+        </classes>
+    </test>
+</suite>

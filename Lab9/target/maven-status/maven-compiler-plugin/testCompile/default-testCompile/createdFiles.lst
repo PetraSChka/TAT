@@ -3,9 +3,12 @@ test\CommonConditions.class
 test\UserAccessTests.class
 service\UserCreator.class
 page\LoginPage.class
+page\CartPage.class
 util\TestListener.class
 service\TestDataReader.class
+test\AddToCartTests.class
 driver\DriverSingleton.class
 page\AbstractPage.class
 model\User.class
 page\MainPage.class
+page\MoneyGunPage.class

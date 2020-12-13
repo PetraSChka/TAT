@@ -1,19 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.074 s <<< FAILURE! - in TestSuite
-loginAmazon(test.UserAccessTests)  Time elapsed: 17.309 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id="nav-link-accountList"]/div/span (tried for 10 second(s) with 500 milliseconds interval)
-	at test.UserAccessTests.loginAmazon(UserAccessTests.java:23)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="nav-link-accountList"]/div/span"}
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.821 s <<< FAILURE! - in TestSuite
+CheckProductByName(test.AddToCartTests)  Time elapsed: 14.643 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
 System info: host: 'DESKTOP-NTOSFO5', ip: '192.168.100.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\PETRAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c71b96c85c5f2588b5e789bccb06c2a0
-*** Element info: {Using=xpath, value=//*[@id="nav-link-accountList"]/div/span}
-	at test.UserAccessTests.loginAmazon(UserAccessTests.java:23)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\PETRAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cbe5d0853d8082d20093d939a282cf56
+	at test.AddToCartTests.CheckProductByName(AddToCartTests.java:26)
 
