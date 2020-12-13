@@ -7,11 +7,6 @@
     <groupId>org.example</groupId>
     <artifactId>Lab9</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>GitHubAutomation</name>
-    <url>http://maven.apache.org</url>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -52,6 +47,7 @@
             <version>2.11.1</version>
         </dependency>
     </dependencies>
+    
     <build>
         <plugins>
             <plugin>
