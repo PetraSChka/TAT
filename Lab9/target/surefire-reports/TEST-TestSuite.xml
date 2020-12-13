@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="21.821" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.894" tests="9" errors="0" skipped="3" failures="6">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="surefire.suiteXmlFiles" value="src\test\resources\testng-smoke.xml"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -20,7 +19,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\PETRAS~1\AppData\Local\Temp\surefire3034211363858284374\surefirebooter7033906528886350975.jar C:\Users\PetraSChka\AppData\Local\Temp\surefire3034211363858284374 2020-12-13T17-21-18_274-jvmRun1 surefire2110155681243657249tmp surefire_05996363473756223731tmp"/>
+    <property name="sun.java.command" value="C:\Users\PETRAS~1\AppData\Local\Temp\surefire4675858486272603002\surefirebooter8883578913783758422.jar C:\Users\PetraSChka\AppData\Local\Temp\surefire4675858486272603002 2020-12-13T17-39-57_092-jvmRun1 surefire2216849095541968331tmp surefire_070715833837486916tmp"/>
     <property name="surefire.test.class.path" value="E:\TAT\TAT\Lab9\target\test-classes;E:\TAT\TAT\Lab9\target\classes;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.0\selenium-java-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.0\selenium-api-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.0\selenium-chrome-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.0\selenium-edge-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.0\selenium-firefox-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.0\selenium-ie-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.0\selenium-opera-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.0\selenium-remote-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.0\selenium-safari-driver-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.0\selenium-support-3.141.0.jar;C:\Users\PetraSChka\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\PetraSChka\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\PetraSChka\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\PetraSChka\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\PetraSChka\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\PetraSChka\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\PetraSChka\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\PetraSChka\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\PetraSChka\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\PetraSChka\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\PetraSChka\.m2\repository\io\github\bonigarcia\webdrivermanager\3.3.0\webdrivermanager-3.3.0.jar;C:\Users\PetraSChka\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\PetraSChka\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\PetraSChka\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\PetraSChka\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\PetraSChka\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\PetraSChka\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PetraSChka\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\PetraSChka\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\PetraSChka\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\PetraSChka\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\PetraSChka\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\PetraSChka\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\PetraSChka\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\PetraSChka\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\PetraSChka\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\PetraSChka\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\PetraSChka\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.1\log4j-core-2.11.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\PetraSChka"/>
@@ -33,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\PETRAS~1\AppData\Local\Temp\surefire3034211363858284374\surefirebooter7033906528886350975.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\PETRAS~1\AppData\Local\Temp\surefire4675858486272603002\surefirebooter8883578913783758422.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -44,7 +43,6 @@
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1251"/>
-    <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="C:\Users\PetraSChka\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
@@ -63,25 +61,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="CheckProductByName" classname="test.AddToCartTests" time="14.643">
-    <failure message="element not interactable&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;&#10;System info: host: &apos;DESKTOP-NTOSFO5&apos;, ip: &apos;192.168.100.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\PETRAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: cbe5d0853d8082d20093d939a282cf56" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-NTOSFO5', ip: '192.168.100.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\PETRAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cbe5d0853d8082d20093d939a282cf56
-	at test.AddToCartTests.CheckProductByName(AddToCartTests.java:26)
+  <testcase name="setUp" classname="test.AddToCartTests" time="1.635">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 </failure>
-    <system-out><![CDATA[2020-12-13 17:21:37,892 INFO  [main] page.MoneyGunPage.addProduct(MoneyGunPage.java:54) Add to cart performed
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 34561
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-дек 13, 2020 5:21:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+  </testcase>
+  <testcase name="CheckProductByPrice" classname="test.AddToCartTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="stopBrowser" classname="test.AddToCartTests" time="1.636">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="setUp" classname="test.UserAccessTests" time="1.641">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="loginAmazon" classname="test.UserAccessTests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="stopBrowser" classname="test.UserAccessTests" time="1.644">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="setUp" classname="test.ValidCartTest" time="1.645">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+  </testcase>
+  <testcase name="CheckProductByPrice" classname="test.ValidCartTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="stopBrowser" classname="test.ValidCartTest" time="1.647">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
   </testcase>
 </testsuite>

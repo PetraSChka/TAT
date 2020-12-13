@@ -1,15 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.821 s <<< FAILURE! - in TestSuite
-CheckProductByName(test.AddToCartTests)  Time elapsed: 14.643 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=87.0.4280.88)
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-NTOSFO5', ip: '192.168.100.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\PETRAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57119}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cbe5d0853d8082d20093d939a282cf56
-	at test.AddToCartTests.CheckProductByName(AddToCartTests.java:26)
+Tests run: 9, Failures: 6, Errors: 0, Skipped: 3, Time elapsed: 1.894 s <<< FAILURE! - in TestSuite
+setUp(test.AddToCartTests)  Time elapsed: 1.635 s  <<< FAILURE!
+java.lang.NullPointerException
+
+stopBrowser(test.AddToCartTests)  Time elapsed: 1.636 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setUp(test.UserAccessTests)  Time elapsed: 1.641 s  <<< FAILURE!
+java.lang.NullPointerException
+
+stopBrowser(test.UserAccessTests)  Time elapsed: 1.644 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setUp(test.ValidCartTest)  Time elapsed: 1.645 s  <<< FAILURE!
+java.lang.NullPointerException
+
+stopBrowser(test.ValidCartTest)  Time elapsed: 1.647 s  <<< FAILURE!
+java.lang.NullPointerException
 

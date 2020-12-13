@@ -25,6 +25,6 @@ public class AddToCartTests extends CommonConditions {
                 .addProduct()
                 .getPrice();
 
-        assertThat(priceOfProductInCart, is(priceOfProduct));
+        assertThat(priceOfProductInCart, is(equalTo(priceOfProduct)));
     }
 }

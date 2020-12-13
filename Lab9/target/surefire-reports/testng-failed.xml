@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke]">
-  <test thread-count="5" verbose="0" name="UserAccess(failed)">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="test.AddToCartTests">
+      <class name="test.UserAccessTests">
         <methods>
           <include name="setUp"/>
-          <include name="CheckProductByName"/>
+          <include name="stopBrowser"/>
+          <include name="loginAmazon"/>
+        </methods>
+      </class> <!-- test.UserAccessTests -->
+      <class name="test.AddToCartTests">
+        <methods>
+          <include name="CheckProductByPrice"/>
+          <include name="setUp"/>
           <include name="stopBrowser"/>
         </methods>
       </class> <!-- test.AddToCartTests -->
+      <class name="test.ValidCartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="CheckProductByPrice"/>
+          <include name="stopBrowser"/>
+        </methods>
+      </class> <!-- test.ValidCartTest -->
     </classes>
-  </test> <!-- UserAccess(failed) -->
-</suite> <!-- Failed suite [Smoke] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
