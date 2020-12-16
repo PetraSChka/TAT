@@ -23,9 +23,6 @@ public class MoneyGunPage extends AbstractPage {
     @FindBy(id = "nav-cart")
     private WebElement cartBtn;
 
-    @FindBy(css = "[href*='/mysite']")
-    private WebElement link;
-
     public MoneyGunPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(this.driver, this);
