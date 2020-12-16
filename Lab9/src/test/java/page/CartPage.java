@@ -17,7 +17,7 @@ public class CartPage extends AbstractPage {
     private final String CART_URL = "https://www.amazon.com/gp/cart/view.html?ref_=nav_cart";
     private final By linkPriceProductLocator = By.xpath("//*[@id=\"sc-subtotal-amount-activecart\"]/span");
 
-    @FindBy(xpath = "//*[text()='Delete']")
+    @FindBy(xpath = "//input[@value='Delete']")
     private WebElement deleteBtn;
 
     public CartPage(WebDriver driver) {
