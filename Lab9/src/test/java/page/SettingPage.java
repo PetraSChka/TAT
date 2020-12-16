@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SettingPage extends AbstractPage {
     private final Logger logger = LogManager.getRootLogger();
     private final String CART_URL = "https://www.amazon.com/gp/customer-preferences/select-language/ref=topnav_lang_ais?preferencesReturnUrl=%2F";
-    private final By linklinkCurrencyLocator = By.id("a-autoid-0-announce");
+    private final By linkCurrencyLocator = By.id("a-autoid-0-announce");
 
     @FindBy(xpath = "//input[@type='submit']")
     private WebElement saveChangesBtn;
@@ -37,7 +37,7 @@ public class SettingPage extends AbstractPage {
 
     public String getCurrency (){
         WebElement linkCurrency = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
-                .until(ExpectedConditions.presenceOfElementLocated(linklinkCurrencyLocator));
+                .until(ExpectedConditions.presenceOfElementLocated(linkCurrencyLocator));
         return linkCurrency.getText();
     }
 

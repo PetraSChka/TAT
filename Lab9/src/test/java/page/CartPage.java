@@ -37,10 +37,9 @@ public class CartPage extends AbstractPage {
     }
 
     public Boolean isProductOnCart(){
-        By productLocator = By.xpath("//*[@id=\"sc-subtotal-amount-activecart\"]/span");
         try {
             new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
-                    .until(ExpectedConditions.presenceOfElementLocated(productLocator));
+                    .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"sc-subtotal-amount-activecart\"]/span")));
         } catch (NoSuchElementException e) {
             logger.info("Элемент не найден");
             return false;
