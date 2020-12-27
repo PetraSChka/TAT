@@ -21,4 +21,5 @@ public class UserAccessTests extends CommonConditions {
                 .getLoggedInUserName();
         assertThat(loggedInUserName, is(equalTo("Hello, "+devUser.getName())));
     }
+
 }

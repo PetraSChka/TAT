@@ -12,9 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class SearchPage extends AbstractPage {
+    private final By productLocator = By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']");
 
     @FindBy(xpath = "//li[@id='p_89/Samsung Electronics']//i")
-    private WebElement filterButton;
+    private WebElement brandFilterButton;
 
     public SearchPage(WebDriver driver) {
         super(driver);
@@ -29,13 +30,13 @@ public class SearchPage extends AbstractPage {
     public List<WebElement> getNonFilterListElements() {
         return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions
-                        .presenceOfAllElementsLocatedBy(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']")));
+                        .presenceOfAllElementsLocatedBy(productLocator));
     }
 
     public List<WebElement> getFilterListElements() {
-        filterButton.click();
+        brandFilterButton.click();
         return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions
-                        .presenceOfAllElementsLocatedBy(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']")));
+                        .presenceOfAllElementsLocatedBy(productLocator));
     }
 }

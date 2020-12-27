@@ -28,7 +28,7 @@ public class SearchTests extends CommonConditions {
     }
 
     @Test
-    public void filterProductTest() {
+    public void brandFilterProductTest() {
         boolean chechName = true;
         List<WebElement> actualSearchElements = new MainPage(driver)
                 .openPage()
