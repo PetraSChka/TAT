@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.is;
 
 public class CartTests extends CommonConditions {
 
-   @Test
+    @Test
     public void AddToCart() {
 
         String priceOfProduct = new MoneyGunPage(driver)
