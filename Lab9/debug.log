@@ -1,0 +1,3 @@
+[1227/164734.207:ERROR:process_reader_win.cc(188)] ResumeThread: Параметр задан неверно. (0x57)
+[1227/164734.358:ERROR:file_io_win.cc(162)] CreateFile C:\Users\PETRAS~1\AppData\Local\Temp\scoped_dir8628_441759035\Crashpad\settings.dat: Не удается найти указанный файл. (0x2)
+[1227/164734.358:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
